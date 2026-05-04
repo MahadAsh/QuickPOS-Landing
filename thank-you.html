@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - QuickPOS</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .thank-you-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .thank-you-card {
+            background: var(--white);
+            padding: 4rem 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .success-icon {
+            font-size: 4rem;
+            color: #10B981;
+            /* Success Green */
+            margin-bottom: 1.5rem;
+        }
+
+        .thank-you-card h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .thank-you-card p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body class="section-bg">
+
+    <!-- Ambient Background Bubbles -->
+    <div class="blob-container" style="position: fixed;">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    <section class="thank-you-section container">
+        <div class="thank-you-card animate-fade-up">
+            <div class="success-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h1>Message Sent Successfully!</h1>
+            <p>Thank you for reaching out. Our team has received your message and will get back to you within 24 hours.
+            </p>
+            <a href="index.php" class="btn btn-primary">Return to Home</a>
+        </div>
+    </section>
+
+</body>
+
+</html>
